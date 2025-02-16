@@ -5,8 +5,8 @@
 
 body {
     background-color: #1F2937;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 15%;
+    margin-right: 15%; */
 }
 
 h1 {
@@ -18,17 +18,20 @@ h1 {
     font-size: 24px;
     color:#F9FAF8;
     font-weight: 710;
-    margin-left: 100px;
 }
 
+.navigation {
+    display: flex;
+}
 
 #navigation-bar {
+    display: flex;
     flex: 1 1 0;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #hero-navigation {
-    margin-right: 175px;
+    gap: 1rem;
 }
 
 /* Navbar links in top right corner */
@@ -48,28 +51,23 @@ h1 {
     display: flex;
     /* flex-wrap allows picture to move to below line instead of being displayed as overflow */
     flex-wrap: wrap; 
+    justify-content: space-evenly;
+    padding: 4rem;
   }
   
   /* this selector selects all divs inside of .flex-container */
-  .flex-container-hero div {
+  /* .flex-container-hero div {
     /* border: 4px solid brown; */
-    height: auto;
-    flex: 1 1 0;
-    margin: 100px;
-  }
+    /* flex: 1; 
+}*/
+
   
   .flex-container-hero .one{
-    /* ensures that the left side stays a certain size */
-    margin-right: auto;
     display: flex;
     flex-direction: column;
-    margin-right: 0;
-
   }
   
   .flex-container-hero .two {
-    margin-left: 0;
-    height: auto;
     display: flex;
   }
 
@@ -77,11 +75,11 @@ h1 {
 /* Hero Text Header "this website is awesome" */
 .item-hero {
     display: flex;
-    /* font-size: 3em; */
     color: #F9FAF8;
     font-weight: 900;
     max-width: 600px;
     margin-bottom: 0;
+    margin-top: 0;
 
 }
 
@@ -100,10 +98,17 @@ h1 {
     min-width: 100px;
 }
 
+.item-heroImage {
+    max-width: max-content;
+    padding: 1rem;
+}
+
 /* Second Section */
 
 .Second{
     background-color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
 }
 
 .informationHeader {
@@ -123,7 +128,9 @@ h1 {
 }
 
 #box-container {
+    display: flex;
     justify-content: center;
+
 }
 
 
@@ -133,7 +140,7 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 
 }
 
@@ -208,3 +215,49 @@ footer {
     color: #ffffff;
     padding: 2em;
 }
+
+
+
+
+.test-container {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+  }
+  
+  /* this selector selects all divs inside of .flex-container */
+  .test-container div {
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(35, 43, 206);
+    flex: 1; 
+    margin: 4rem;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    min-height: 25vh;
+    max-width: 10vw;
+  }
+
+  .test-container div > p {
+    text-align: center;
+  }
+
+  .test-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+ }
+
+  .test-container2 div {
+    flex: 1; 
+    margin: 4rem;
+    margin-top: 0;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    min-height: 28vh;
+    max-width: 10vw;
+  }
+
+  .test-container2 div > p {
+    text-align: center;
+  }
