@@ -228,21 +228,57 @@ footer {
 
 .flex-container-hero2 {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
 .flex-container-hero2 .leftAction{
     display: flex;
     flex-direction: column;
-    border: 10px solid red;
+    /* border: 10px solid red; */
     max-height: 20vh;
+    flex: 1 1 auto;
+    padding: 100px;
   }
   
   .flex-container-hero2 .rightAction {
     display: flex;
     border: 10px solid red;
   }
+
+  .CallToAction {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Button Color: call to action background color */
+button {
+    background-color: #3882F6;
+    color: #f9faf8;
+    border-radius: 10px;
+    border: none;
+    min-width: 50px;
+    max-width: 125px;
+    padding: 5px 35px;
+    height: auto;
+    width: auto;
+}
+
+.leftAction {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+}
+
+.rightAction {
+    border: 2px solid #F9FAF8;
+    display: flex;
+    align-self: center;
+}
+
+
+  
+
+  
 
 
 
