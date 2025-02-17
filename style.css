@@ -201,17 +201,16 @@ h1 {
 }
 
 .CallToAction {
+    display: flex;
+    justify-content: space-around;
     padding: 40px;
     background: #3882F6;
     border-radius: 10px;
     color: #F9FAF8;
-    margin: 10rem;
+    border: 2px solid white;
     /* border: 10px solid red; */
 }
 
-.actionHeader {
-    font-size: 36px;
-}
 
 footer {
     background-color: #1F2937;
@@ -234,28 +233,24 @@ footer {
 .flex-container-hero2 .leftAction{
     display: flex;
     flex-direction: column;
-    /* border: 10px solid red; */
+    /* border: 10px solid red;  */
     max-height: 20vh;
     flex: 1 1 auto;
-    padding: 100px;
+    /* padding: 100px; */
   }
   
   .flex-container-hero2 .rightAction {
     display: flex;
-    border: 10px solid red;
+    /* border: 10px solid red; */
   }
 
-  .CallToAction {
-    display: flex;
-    justify-content: center;
-  }
 
   /* Button Color: call to action background color */
-button {
+.CallToActionButton {
     background-color: #3882F6;
     color: #f9faf8;
     border-radius: 10px;
-    border: none;
+    border: 2px solid white;
     min-width: 50px;
     max-width: 125px;
     padding: 5px 35px;
@@ -263,18 +258,24 @@ button {
     width: auto;
 }
 
-.leftAction {
+/* .leftAction {
     display: flex;
     flex-direction: column;
-    align-items: last baseline;
 }
 
 .rightAction {
     border: 2px solid #F9FAF8;
     display: flex;
     align-self: center;
-}
+} */
 
+
+/* .flex-container div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    flex: 1 1 0%;
+  } */
 
   
 
