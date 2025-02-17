@@ -5,12 +5,10 @@
 
 body {
     background-color: #1F2937;
-    /* margin-left: 15%;
-    margin-right: 15%; */
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 4rem;
 }
 
 /* Logo Text in top left */
@@ -37,9 +35,7 @@ h1 {
 /* Navbar links in top right corner */
 .flex-container > #navigation-items {
     color:#F9FAF8;
-    flex-direction: row;
-    padding: 10px;
-       
+    padding: 10px;     
 }
 
 /* First Section, Navigation bar and Hero */
@@ -54,14 +50,7 @@ h1 {
     justify-content: space-evenly;
     padding: 4rem;
   }
-  
-  /* this selector selects all divs inside of .flex-container */
-  /* .flex-container-hero div {
-    /* border: 4px solid brown; */
-    /* flex: 1; 
-}*/
 
-  
   .flex-container-hero .one{
     display: flex;
     flex-direction: column;
@@ -93,9 +82,14 @@ h1 {
 }
 
 .item-heroButton {
-    border-radius: 5px;
-    padding: 5px;
-    min-width: 100px;
+    background-color: #3882F6;
+    color: #f9faf8;
+    border-radius: 10px;
+    border: none;
+    min-width: 50px;
+    max-width: 125px;
+    padding: 5px 35px;
+    max-height: 40vh;
 }
 
 .item-heroImage {
@@ -111,57 +105,56 @@ h1 {
     flex-direction: column;
 }
 
-.informationHeader {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 900;
-    text-align: center;
-}
-
-.box {
-    border: 4px ridge #3030e6;
-    margin-left:auto;
-    margin-right:auto;
-    border-radius: 10px;
-    width: 100px;
-    height: 100px;      
-}
-
-#box-container {
+.test-container {
     display: flex;
     justify-content: center;
+    gap: 1rem;
+ }
+ 
+ /* this selector selects all divs inside of .flex-container */
+ .test-container div {
+   background: rgb(255, 255, 255);
+   border: 5px solid rgb(35, 43, 206);
+   flex: 1; 
+   margin: 4rem;
+   margin-bottom: 0;
+   justify-content: space-evenly;
+   border-radius: 1rem;
+   min-height: 25vh;
+   max-width: 10vw;
+ }
 
+ .test-container div > p {
+   text-align: center;
+ }
+
+ .test-container2 {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
 }
 
+ .test-container2 div {
+   flex: 1; 
+   margin: 4rem;
+   margin-top: 0;
+   justify-content: space-evenly;
+   border-radius: 1rem;
+   min-height: 28vh;
+   max-width: 10vw;
+ }
 
-/* This helps size the Random Information boxes in second section */
+ .test-container2 div > p {
+   text-align: center;
+ }
 
-.flex-container > .boxCaption {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    /* justify-content: space-evenly; */
 
-}
-
-/* Button Color: call to action background color */
-button {
-    background-color: #3882F6;
-    color: #f9faf8;
-    border-radius: 10px;
-    border: none;
-    min-width: 50px;
-    max-width: 125px;
-    padding: 5px 35px;
-    height: auto;
-    width: auto;
-}
 
 .signUpButton, button {
     font-weight: 700;
 }
 
-/* Quote Section - Third */
+/* Third Section - Quote */
 
 .ThirdSection {
     background-color: #E5E7EB;
@@ -169,18 +162,44 @@ button {
     flex-direction: column;
 }
 
+.test-container3 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+ }
+
 .quoteBox {
     display: flex;
+    color: #1F2937;
     font-size: 36px;
-    font-style: italic;
-    align-items: auto;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 10px solid red; */
 }
+
+#centerQuoteBox {
+    flex: 1 1 0%;
+    min-height: 40vh;
+}
+
+.quoteBox-Text {
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.quoteBoxName {
+    font-size: 36px;
+    flex: 1;
+    align-self: flex-end;
+}
+
 
 /* Fourth Section - Call To Action */
 .FourthSection {
     background-color: #fff;
     padding: 30px;
-
 }
 
 .CallToAction {
@@ -219,45 +238,3 @@ footer {
 
 
 
-.test-container {
-     display: flex;
-     justify-content: center;
-     gap: 1rem;
-  }
-  
-  /* this selector selects all divs inside of .flex-container */
-  .test-container div {
-    background: rgb(255, 255, 255);
-    border: 5px solid rgb(35, 43, 206);
-    flex: 1; 
-    margin: 4rem;
-    margin-bottom: 0;
-    justify-content: space-evenly;
-    border-radius: 1rem;
-    min-height: 25vh;
-    max-width: 10vw;
-  }
-
-  .test-container div > p {
-    text-align: center;
-  }
-
-  .test-container2 {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
- }
-
-  .test-container2 div {
-    flex: 1; 
-    margin: 4rem;
-    margin-top: 0;
-    justify-content: space-evenly;
-    border-radius: 1rem;
-    min-height: 28vh;
-    max-width: 10vw;
-  }
-
-  .test-container2 div > p {
-    text-align: center;
-  }
