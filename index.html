@@ -26,7 +26,7 @@
 <!-- TODO: Fix navigation links to anchor to right side of flexbox -->
 <!-- TODO: Line up image and hero text to sit side by side, currently off center -->
 <section class="FirstSection">
-    <div class="flex-container-hero">
+    <div class="hero-container">
         <div class="one">
             <h1 class="item-hero">This website is awesome</h1>
             <p class="item-heroSubtext">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
@@ -39,11 +39,11 @@
     
 </section>
 
-<!-- Second Section - Boxes -->
+<!-- Second Section - Info -->
 
-<section class ="Second">
+<section class ="SecondSection">
     <h1 style="text-align: center;">Some Random Information.</h1>
-    <div class="test-container">
+    <div class="box-container">
         <div class="one">  
         </div>
         <div class="two"> 
@@ -53,7 +53,7 @@
         <div class="four">  
         </div>
       </div>
-      <div class="test-container2">
+      <div class="info-container">
         <div class="one">
             <p>this is some subtext under an illustration or image</p>
         </div>
@@ -76,7 +76,7 @@
 
 
     <div class="ThirdSection">
-        <div class="test-container3">
+        <div class="quote-container">
         <div class="quoteBox"><p></p></div>
         <div class="quoteBox" id="centerQuoteBox">
             <p class="quoteBox-Text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
@@ -88,51 +88,22 @@
 
 <!-- Fourth Section - Call To Action -->
 
-<!-- TODO: Shrink space between header and subheader -->
-<!-- TODO: Fix button size and align better --> 
-<!-- <section class="FourthSection">
-        <div class="CallToAction">
-            <div class="flex-container-hero2">
-                <div class="leftAction">
-                    <p class="actionHeader" style="font-size: 38px;">Call To action! It's Time!</p>
-                    <p style="font-size: 20px;">Sign up for the product by clicking that button right over there!</p>
-                </div>
-            <div class="rightAction">
-                <button class="CallToAction">Sign Up</button>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <section class="FourthSection">
-            <div class="CallToAction">
-                <div class="flex-container">
-                    <div class="leftAction">
-                        <p class="actionHeader">Call To action! It's Time!</p>
-                        <p>Sign up for the product by clicking that button right over there!</p>
-                    </div>
-                    <div class="rightAction">
-                    <button class="CallToAction">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-
-</section> -->
-
 <section class="FourthSection">
-    <div class="CallToAction">
-        <div class="flex-container-hero2">
-            <div class="leftAction">
+
+    <div class="CallToActionMain">
+        <div class="action-container">
+            <div class="item-action-left">
                 <p style="font-size:36px;">Call To action! It's Time!</p>
                 <p>Sign up for the product by clicking that button right over there!</p>
             </div>
-            <div class="rightAction">
+            <div class="item-action-right">
             <button class="CallToActionButton">Sign Up</button>
             </div>
         </div>
     </div>
+</section>
 
-    <footer class="EndSection">
+    <footer>
         <!-- Centered text in middle -->
         <p> Copyright Frank S Pelletier (Part of the Odin Project Foundation Curriculum) 2025</p>
     </footer>

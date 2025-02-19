@@ -33,7 +33,7 @@ h1 {
 }
 
 /* Navbar links in top right corner */
-.flex-container > #navigation-items {
+#navigation-items {
     color:#F9FAF8;
     padding: 10px;     
 }
@@ -43,7 +43,7 @@ h1 {
     display: flex;
 }
 
-.flex-container-hero {
+.hero-container {
     display: flex;
     /* flex-wrap allows picture to move to below line instead of being displayed as overflow */
     flex-wrap: wrap; 
@@ -51,16 +51,14 @@ h1 {
     padding: 4rem;
   }
 
-  .flex-container-hero .one{
+.hero-container .one{
     display: flex;
     flex-direction: column;
   }
   
-  .flex-container-hero .two {
+.hero-container .two {
     display: flex;
   }
-
-
 
 
 /* Hero Text Header "this website is awesome" */
@@ -74,7 +72,7 @@ h1 {
 
 }
 
-.flex-container-hero .item-heroSubtext, .item-heroButton {
+.hero-container .item-heroSubtext, .item-heroButton {
     margin-top: 0;
     color: #F9FAF8;
 }
@@ -101,20 +99,20 @@ h1 {
 
 /* Second Section */
 
-.Second{
+.SecondSection{
     background-color: #F9FAF8;
     display: flex;
     flex-direction: column;
 }
 
-.test-container {
+.box-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
  }
  
  /* this selector selects all divs inside of .flex-container */
- .test-container div {
+ .box-container div {
    background: rgb(255, 255, 255);
    border: 5px solid rgb(35, 43, 206);
    flex: 1; 
@@ -126,14 +124,13 @@ h1 {
    max-width: 10vw;
  }
 
-
- .test-container2 {
+ .info-container {
    display: flex;
    justify-content: center;
    gap: 1rem;
 }
 
- .test-container2 div {
+ .info-container div {
    flex: 1; 
    margin: 4rem;
    margin-top: 0;
@@ -142,11 +139,9 @@ h1 {
    max-width: 10vw;
  }
 
- .test-container2 div > p {
+ .info-container div > p {
    text-align: center;
  }
-
-
 
 .signUpButton, button {
     font-weight: 700;
@@ -160,7 +155,7 @@ h1 {
     flex-direction: column;
 }
 
-.test-container3 {
+.quote-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -197,51 +192,48 @@ h1 {
 /* Fourth Section - Call To Action */
 .FourthSection {
     background-color: #fff;
-    padding: 30px;
 }
 
-.CallToAction {
+.CallToActionMain {
+    /* display: flex;
+    max-width: fit-content; */
     display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    background: #3882F6;
-    border-radius: 10px;
-    color: #F9FAF8;
-    border: 2px solid white;
-    /* border: 10px solid red; */
-}
-
-
-footer {
-    background-color: #1F2937;
-    text-align: center;
-    color: #ffffff;
-    padding: 2em;
-}
-
-.test-container4 {
-    display: flex;
-    background: #3882F6;
-    color: #F9FAF8;
-}
-
-.flex-container-hero2 {
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+
+}
+
+
+.action-container {
+    display: flex;
+    gap: 5rem;
+    background: #3882F6;
+    padding: 1rem;
+    margin:2rem;
+    border-radius: 1rem;
   }
 
-.flex-container-hero2 .leftAction{
+.action-container p {
+    margin: 0;
+  }
+
+.item-action-left{
     display: flex;
     flex-direction: column;
     /* border: 10px solid red;  */
-    max-height: 20vh;
-    flex: 1 1 auto;
-    /* padding: 100px; */
+    color: #F9FAF8;
+    padding: 1rem;
+    flex: 1 0 auto;
   }
-  
-  .flex-container-hero2 .rightAction {
+
+ 
+  .item-action-right {
     display: flex;
     /* border: 10px solid red; */
+    align-self: center;
+    flex: 1 0 auto;
+    padding: 2rem;
   }
 
 
@@ -257,6 +249,18 @@ footer {
     height: auto;
     width: auto;
 }
+
+/* End of Page */
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    color: #ffffff;
+    padding: 2em;
+}
+
+
+/* unused code, tbd if worth keeping */
+
 
 /* .leftAction {
     display: flex;
