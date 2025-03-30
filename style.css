@@ -107,8 +107,7 @@ h1 {
 
 .box-container {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-evenly;
  }
  
  /* this selector selects all divs inside of .flex-container */
@@ -126,8 +125,7 @@ h1 {
 
  .info-container {
    display: flex;
-   justify-content: center;
-   gap: 1rem;
+   justify-content: space-evenly;
 }
 
  .info-container div {
